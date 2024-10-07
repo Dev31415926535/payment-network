@@ -1,6 +1,8 @@
 // pages/index.js (for the homepage)
 import { useState, useEffect } from 'react';
-// import styles from '../styles/global.css'
+import styles from '../styles/global.css'
+import Image from 'next/image';
+
 
 export default function Home() {
   const [items, setItems] = useState([]);
@@ -54,10 +56,10 @@ export default function Home() {
   return (
     <div>
       <header>
-        {/* <div className={styles.logo}>
-          <img src="/logo.png" alt="Educhain Nexus Logo" className= {styles.logoImg} />
+        <div className={styles.logo}>
+          <Image src="/logo.png" alt="Educhain Nexus Logo" width={50} height={50} className= {styles.logoImg}></Image>
           Educhain Nexus
-        </div> */}
+        </div>
       </header>
       <main>
         <h1>Welcome to EduChain Nexus</h1>
